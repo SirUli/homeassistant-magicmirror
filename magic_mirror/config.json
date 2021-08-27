@@ -3,7 +3,7 @@
   "version": "0.23.3",
   "slug": "magic_mirror",
   "description": "MagicMirror² is an open source modular smart mirror platform. This run the server in you HASS.IO environment.",
-  "url": "https://github.com/sytone/hassio-addons",
+  "url": "https://github.com/SirUli/sytone-magicmirror-hass-addon",
   "arch": ["armhf", "armv7", "aarch64", "i386", "amd64"],
   "startup": "application",
   "boot": "auto",
@@ -19,11 +19,6 @@
       {
         "name": "MMM-OnScreenMenu",
         "git": "https://github.com/sytone/MMM-OnScreenMenu.git",
-        "cmd": ""
-      },
-      {
-        "name": "DailyXKCD",
-        "git": "https://github.com/Blastitt/DailyXKCD.git",
         "cmd": ""
       },
       {
