@@ -6,7 +6,9 @@
   "url": "https://github.com/SirUli/sytone-magicmirror-hass-addon",
   "arch": ["armhf", "armv7", "aarch64", "i386", "amd64"],
   "startup": "application",
+  "ingress": true,
   "boot": "auto",
+  "panel_icon": "mdi:monitor-shimmer"
   "homeassistant_api": true,
   "ports": {
     "8080/tcp": 8181
@@ -39,7 +41,12 @@
       {
         "name": "MMM-HASS",
         "git": "https://github.com/aserramonner/MMM-HASS.git",
-        "cmd": "cd $MIRROR_APP_PATH/ && git checkout modules/node_modules/node_helper/index.js"
+        "cmd": ""
+      },
+      {
+        "name": "MMM-RTSPStream",
+        "git": "https://github.com/shbatm/MMM-RTSPStream.git",
+        "cmd": ""
       }
     ]
   },
