@@ -42,11 +42,6 @@
         "name": "MMM-HASS",
         "git": "https://github.com/aserramonner/MMM-HASS.git",
         "cmd": ""
-      },
-      {
-        "name": "MMM-RTSPStream",
-        "git": "https://github.com/shbatm/MMM-RTSPStream.git",
-        "cmd": ""
       }
     ]
   },
