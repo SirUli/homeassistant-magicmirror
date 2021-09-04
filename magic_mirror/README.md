@@ -18,7 +18,7 @@ Learn more about MagicMirror² [here](https://magicmirror.builders/)
 The installation of this add-on is pretty straightforward and not different in
 comparison to installing any other Hass.io add-on.
 
-1. [Add our Hass.io add-ons repository][repository] to your Hass.io instance.
+1. [Add the add-on repository][repository] to your Hass.io instance in the Supervisor section.
 1. Install the "MagicMirror²" add-on.
 1. Start the "MagicMirror²" add-on
 1. Check the logs of the "MagicMirror²" add-on to see if everything went well.
@@ -138,16 +138,16 @@ You could also [open an issue here][issue] GitHub.
 This is an active open-source project. We are always open to people who want to
 use the code or contribute to it.
 
-[commits-shield]: https://img.shields.io/github/commit-activity/y/sytone/hassio-addons.svg
+[commits-shield]: https://img.shields.io/github/commit-activity/y/SirUli/sytone-magicmirror-hass-addon.svg
 [commits]: https://github.com/sytone/hassio-addons/commits/master
 [sytone]: https://github.com/sytone
 [home-assistant]: https://home-assistant.io
 [issue]: https://github.com/sytone/hassio-addons/issues
 [keepchangelog]: http://keepachangelog.com/en/1.0.0/
-[license-shield]: https://img.shields.io/github/license/sytone/hassio-addons.svg
-[maintenance-shield]: https://img.shields.io/maintenance/yes/2018.svg
+[license-shield]: https://img.shields.io/github/license/SirUli/sytone-magicmirror-hass-addon.svg
+[maintenance-shield]: https://img.shields.io/maintenance/yes/2021.svg
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-experimental-yellow.svg
-[releases-shield]: https://img.shields.io/github/release/sytone/hassio-addons.svg
-[releases]: https://github.com/sytone/hassio-addons/releases
-[repository]: https://github.com/sytone/hassio-addons
+[releases-shield]: https://img.shields.io/github/release/SirUli/sytone-magicmirror-hass-addon.svg
+[releases]: https://github.com/SirUli/sytone-magicmirror-hass-addon/releases
+[repository]: https://github.com/SirUli/sytone-magicmirror-hass-addon
 [semver]: http://semver.org/spec/v2.0.0.htm
