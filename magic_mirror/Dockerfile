@@ -14,7 +14,7 @@ ARG BUILD_REPOSITORY
 ARG BUILD_VERSION
 
 # Setup base
-RUN apk add --no-cache git nodejs nodejs-npm curl wget unzip ffmpeg omxplayer vlc wmctrl \
+RUN apk add --no-cache git nodejs nodejs-npm curl wget unzip \
     && npm set unsafe-perm true \
     && npm i npm@latest -g 
 
