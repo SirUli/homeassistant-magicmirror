@@ -19,8 +19,8 @@ RUN apk add --no-cache git nodejs nodejs npm curl wget unzip \
 
 WORKDIR /opt/magic_mirror
 
-RUN git clone --depth 1 -b master https://github.com/MichMich/MagicMirror.git . \
-  && npm install
+RUN git clone --depth 1 -b master https://github.com/MichMich/MagicMirror.git .
+RUN npm install
 
 # Copy data
 COPY run.sh /
