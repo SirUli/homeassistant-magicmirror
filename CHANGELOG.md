@@ -8,6 +8,12 @@ and this project adheres to [Semantic Versioning][semantic-versioning].
 ## Unreleased
 
 No unreleased changes yet.
+## [v0.25.0] (2021-11-01)
+
+### Changed
+- Adapted internal Home assistant URL to the current one
+- Switched places of repository urls
+
 ## [v0.23.0] (2018-07-18)
 
 ### Added

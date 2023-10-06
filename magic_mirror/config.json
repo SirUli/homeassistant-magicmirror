@@ -1,9 +1,9 @@
 {
   "name": "MagicMirror²",
-  "version": "0.24.2",
+  "version": "0.25.0",
   "slug": "magic_mirror",
-  "description": "MagicMirror² is an open source modular smart mirror platform. This run the server in you HASS.IO environment.",
-  "url": "https://github.com/SirUli/sytone-magicmirror-hass-addon",
+  "description": "MagicMirror² is an open source modular smart mirror platform. This addon run the server in your home assistant environment.",
+  "url": "https://github.com/SirUli/homeassistant-magicmirror",
   "arch": ["armhf", "armv7", "aarch64", "i386", "amd64"],
   "startup": "application",
   "ingress": false,

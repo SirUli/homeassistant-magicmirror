@@ -1,4 +1,4 @@
-# Community Hass.io Add-ons: MagicMirror²
+# Community Home Assistant Add-ons: MagicMirror²
 
 [![GitHub Release][releases-shield]][releases]
 ![Project Stage][project-stage-shield]
@@ -16,13 +16,13 @@ Learn more about MagicMirror² [here](https://magicmirror.builders/)
 ## Installation
 
 The installation of this add-on is pretty straightforward and not different in
-comparison to installing any other Hass.io add-on.
+comparison to installing any other Home Assistant add-on.
 
-1. [Add the add-on repository][repository] to your Hass.io instance in the Supervisor section.
+1. [Add the add-on repository][repository] to your Home Assistant instance in the Supervisor section.
 1. Install the "MagicMirror²" add-on.
 1. Start the "MagicMirror²" add-on
 1. Check the logs of the "MagicMirror²" add-on to see if everything went well.
-1. Open the dashboard at this url `http://hassio.local:8181`
+1. Open the magicmirror interface on the port 8181 of your homeassistant hostname (e.g. http://homeassistant:8181/)
 
 ## Addon Configuration
 
@@ -69,10 +69,10 @@ can be edited. Please make sure you do not change the Home Assistant urls as the
 the internal API Proxy used by HASS.
 
 Default home page showing some sensor data
-![Default home with some sensor data](https://raw.githubusercontent.com/sytone/hassio-addons/master/magic_mirror/mm-home.png)
+![Default home with some sensor data](https://raw.githubusercontent.com/SirUli/homeassistant-magicmirror/master/magic_mirror/mm-home.png)
 
 Using the menu you can navigate to the full Home Assistant UI, handy for tablets.
-![Using menu to access ha layer](https://raw.githubusercontent.com/sytone/hassio-addons/master/magic_mirror/mm-ha-menu.png)
+![Using menu to access ha layer](https://raw.githubusercontent.com/SirUli/homeassistant-magicmirror/master/magic_mirror/mm-ha-menu.png)
 
 
 ## MagicMirror² configuration and user manuals
@@ -89,7 +89,7 @@ be created. Uner that there will be three more folders. These are
 
 When the addon starts it will copy these settings into the container and start the 
 MagicMirror² process. If you edit or update these you will need to restart the
-MagicMirror² addon in the HASS.IO interface.
+MagicMirror² addon in the Home Assistant interface.
 
 If you use the modules folder in the Home Assistant configuration make sure you 
 have done a `npm install` as it is just copied across. 
@@ -109,7 +109,7 @@ panel_iframe:
   MagicMirror:
     title: Magic Mirror
     icon: mdi:image-filter-frames
-    url: http://addres.to.your.hass.io:8181
+    url: http://addres.to.your.Home Assistant:8181
 ```
 
 ## Changelog & Releases
@@ -138,16 +138,15 @@ You could also [open an issue here][issue] GitHub.
 This is an active open-source project. We are always open to people who want to
 use the code or contribute to it.
 
-[commits-shield]: https://img.shields.io/github/commit-activity/y/SirUli/sytone-magicmirror-hass-addon.svg
-[commits]: https://github.com/sytone/hassio-addons/commits/master
-[sytone]: https://github.com/sytone
+[commits-shield]: https://img.shields.io/github/commit-activity/y/SirUli/homeassistant-magicmirror.svg
+[commits]: https://github.com/SirUli/homeassistant-magicmirror/commits/master
 [home-assistant]: https://home-assistant.io
-[issue]: https://github.com/sytone/hassio-addons/issues
+[issue]: https://github.com/SirUli/homeassistant-magicmirror/issues
 [keepchangelog]: http://keepachangelog.com/en/1.0.0/
-[license-shield]: https://img.shields.io/github/license/SirUli/sytone-magicmirror-hass-addon.svg
+[license-shield]: https://img.shields.io/github/license/SirUli/homeassistant-magicmirror.svg
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2021.svg
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-experimental-yellow.svg
-[releases-shield]: https://img.shields.io/github/release/SirUli/sytone-magicmirror-hass-addon.svg
-[releases]: https://github.com/SirUli/sytone-magicmirror-hass-addon/releases
-[repository]: https://github.com/SirUli/sytone-magicmirror-hass-addon
+[releases-shield]: https://img.shields.io/github/release/SirUli/homeassistant-magicmirror.svg
+[releases]: https://github.com/SirUli/homeassistant-magicmirror/releases
+[repository]: https://github.com/SirUli/homeassistant-magicmirror
 [semver]: http://semver.org/spec/v2.0.0.htm
