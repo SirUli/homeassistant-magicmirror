@@ -6,22 +6,19 @@
  * For more information how you can configurate this file
  * See https://github.com/MichMich/MagicMirror#configuration
  *
- * When running in HASS.IO the address and ipWhitelist need to be 
- * empty and any access mcontrols need to be on the host
- * and not in the container.
  */
 
 var config = {
-    address: "0.0.0.0", // Empty will only run on 127.0.0.1 - share on all addresses inside docker container.
-    port: 8080, // Update port in HASS.IO configuration and not here.
-    ipWhitelist: [], // Empty as in docker container, ACL from the host.
+    address: "0.0.0.0", // Do not change - Empty will only run on 127.0.0.1 - share on all addresses inside docker container.
+    port: 8080, // Do not change - Update port in Addon Configuration in Home Assistant configuration
+    ipWhitelist: [], // Do not change - Must be empty as in docker container, ACL from the host.
 
     //
     // The settings below are for a basic setup, please modifiy as needed. 
     //
     language: "en",
     timeFormat: 24,
-    units: "imperial",
+    units: "metric",
     customCss: "css/custom.css",
 
     modules: [
@@ -139,39 +136,43 @@ var config = {
             }
         },
         {
-                module: "MMM-HASS",
-                position: "top_left",
-                config: {
-                        host: "hassio/homeassistant", // Special docker ha api proxy
-                        port: "",
-                        https: false,
-			hassiotoken: true,
-                        devices: [
-                        { deviceLabel: "Exterior",
-                                deviceReadings: [
-                                { sensor: "sensor.dark_sky_temperature", icon: "wi wi-thermometer", suffix: "°"},
-                                { sensor: "sensor.dark_sky_humidity", icon: "wi wi-humidity", suffix: "%"}
-                                ]
-                        },
-                        { deviceLabel: "Interior",
-                                deviceReadings: [
-                                { sensor: "sensor.main_floor_temperature", icon: "wi wi-thermometer", suffix: "°", notification: "INDOOR_TEMPERATURE"},
-                                { sensor: "sensor.main_floor_humidity", icon: "wi wi-humidity", suffix: "%"}
-                                ]
-                        },
-                        { deviceLabel: "Internet",
-                                deviceReadings: [
-                                { sensor: "sensor.speedtest_ping", icon: "fa fa-tachometer-alt", suffix: ""}
-                                ]
-                        }
+            module: "MMM-HASS",
+            position: "top_left",
+            config: {
+                host: "supervisor/core", // Special docker ha api proxy
+                port: "",
+                https: false,
+                hassiotoken: true,
+                devices: [
+                    {
+                        deviceLabel: "Exterior",
+                        deviceReadings: [
+                            { sensor: "sensor.dark_sky_temperature", icon: "wi wi-thermometer", suffix: "°"},
+                            { sensor: "sensor.dark_sky_humidity", icon: "wi wi-humidity", suffix: "%"}
                         ]
-                  }
+                    },
+                    {
+                        deviceLabel: "Interior",
+                        deviceReadings: [
+                            { sensor: "sensor.main_floor_temperature", icon: "wi wi-thermometer", suffix: "°", notification: "INDOOR_TEMPERATURE"},
+                            { sensor: "sensor.main_floor_humidity", icon: "wi wi-humidity", suffix: "%"}
+                        ]
+                    },
+                    {
+                        deviceLabel: "Internet",
+                        deviceReadings: [
+                            { sensor: "sensor.speedtest_ping", icon: "fa fa-tachometer-alt", suffix: ""}
+                        ]
+                    }
+                ]
+            }
         },        
         {
 		    module: 'MMM-homeassistant-sensors',
 		    position: 'top_left',
 		    config: {
-			    url: 'http://hassio/homeassistant/api/states', // Special docker ha api proxy
+                host: 'supervisor/core', // Special docker ha api proxy
+                https: 'false',
 			    prettyName: false,
 			    stripName: false,
 			    values: [{
