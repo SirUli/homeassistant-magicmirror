@@ -7,9 +7,9 @@
 
 ## About
 
-MagicMirror² is an open source modular smart mirror platform. With a growing list 
-of installable modules, the MagicMirror² allows you to convert your hallway or 
-bathroom mirror into your personal assistant. 
+MagicMirror² is an open source modular smart mirror platform. With a growing list
+of installable modules, the MagicMirror² allows you to convert your hallway or
+bathroom mirror into your personal assistant.
 
 Learn more about MagicMirror² [here](https://magicmirror.builders/)
 
@@ -22,7 +22,7 @@ comparison to installing any other Home Assistant add-on.
 1. Install the "MagicMirror²" add-on.
 1. Start the "MagicMirror²" add-on
 1. Check the logs of the "MagicMirror²" add-on to see if everything went well.
-1. Open the magicmirror interface on the port 8181 of your homeassistant hostname (e.g. http://homeassistant:8181/)
+1. Open the magicmirror interface on the port 8181 of your homeassistant hostname (e.g. <http://homeassistant:8181/>)
 
 ## Addon Configuration
 
@@ -44,14 +44,14 @@ Example add-on configuration:
 
 ### Option: `gitupdate`
 
-The `gitupdate` option will run a git pull to get the latest version of MagicMirror² 
-from [https://github.com/MichMich/MagicMirror](https://github.com/MichMich/MagicMirror) 
-when the addon starts up. 
+The `gitupdate` option will run a git pull to get the latest version of MagicMirror²
+from [https://github.com/MichMich/MagicMirror](https://github.com/MichMich/MagicMirror)
+when the addon starts up.
 
 ### Option: `npmupdate`
 
 This option will call a npm update to ensure it is latest, this may be needed
-if you are using your own modules or have a security issue. 
+if you are using your own modules or have a security issue.
 
 ### Option: `npminstall`
 
@@ -60,13 +60,13 @@ If enabled npm install will be run after the git update. Off by default.
 ### Option: `modules`
 
 This is a collections of modules you want to have installed for your system. It
-will pull them down and run a `npm install` on them for you. 
+will pull them down and run a `npm install` on them for you.
 
 ## Example
 
-When installed it will place a pre-configured config file in place to get you started. Thie
-can be edited. Please make sure you do not change the Home Assistant urls as they are for
-the internal API Proxy used by HASS.
+When installed it will place a pre-configured config file in place to get you started. This
+can be edited. Please make sure you do not change the Home Assistant URLs as they are for
+the internal API Proxy used by Home Assistant.
 
 Default home page showing some sensor data
 ![Default home with some sensor data](https://raw.githubusercontent.com/SirUli/homeassistant-magicmirror/master/magic_mirror/mm-home.png)
@@ -74,27 +74,26 @@ Default home page showing some sensor data
 Using the menu you can navigate to the full Home Assistant UI, handy for tablets.
 ![Using menu to access ha layer](https://raw.githubusercontent.com/SirUli/homeassistant-magicmirror/master/magic_mirror/mm-ha-menu.png)
 
-
 ## MagicMirror² configuration and user manuals
 
 The add-on does not configure MagicMirror² for you. When it starts it will create
-a default configuration file in your Home Assistant configuration directory. 
+a default configuration file in your Home Assistant configuration directory.
 
-Under the root of the Home Assistant directoy a folder called `magicmirror` will
-be created. Uner that there will be three more folders. These are
+Under the root of the Home Assistant directory a folder called `magicmirror` will
+be created. Under that there will be three more folders. These are
 
-* config - Contains the config.js and example. 
-* css - Any custom css changes will be copied over. 
+* config - Contains the config.js and example.
+* css - Any custom css changes will be copied over.
 * modules - Any custom modules will be copied over.
 
-When the addon starts it will copy these settings into the container and start the 
+When the addon starts it will copy these settings into the container and start the
 MagicMirror² process. If you edit or update these you will need to restart the
 MagicMirror² addon in the Home Assistant interface.
 
-If you use the modules folder in the Home Assistant configuration make sure you 
-have done a `npm install` as it is just copied across. 
+If you use the modules folder in the Home Assistant configuration make sure you
+have done a `npm install` as it is just copied across.
 
-For more information about configuring MagicMirror², please go to 
+For more information about configuring MagicMirror², please go to
 [https://magicmirror.builders/](https://magicmirror.builders/)
 
 ## Embedding into Home Assistant
@@ -121,9 +120,9 @@ Releases are based on [Semantic Versioning][semver], and use the format
 of ``MAJOR.MINOR.PATCH``. In a nutshell, the version will be incremented
 based on the following:
 
-- ``MAJOR``: Incompatible or major changes.
-- ``MINOR``: Backwards-compatible new features and enhancements.
-- ``PATCH``: Backwards-compatible bugfixes and package updates.
+* ``MAJOR``: Incompatible or major changes.
+* ``MINOR``: Backwards-compatible new features and enhancements.
+* ``PATCH``: Backwards-compatible bugfixes and package updates.
 
 ## Support
 
@@ -140,13 +139,12 @@ use the code or contribute to it.
 
 [commits-shield]: https://img.shields.io/github/commit-activity/y/SirUli/homeassistant-magicmirror.svg
 [commits]: https://github.com/SirUli/homeassistant-magicmirror/commits/master
-[home-assistant]: https://home-assistant.io
 [issue]: https://github.com/SirUli/homeassistant-magicmirror/issues
 [keepchangelog]: http://keepachangelog.com/en/1.0.0/
-[license-shield]: https://img.shields.io/github/license/SirUli/homeassistant-magicmirror.svg
-[maintenance-shield]: https://img.shields.io/maintenance/yes/2021.svg
+[maintenance-shield]: https://img.shields.io/maintenance/yes/2023.svg
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-experimental-yellow.svg
 [releases-shield]: https://img.shields.io/github/release/SirUli/homeassistant-magicmirror.svg
 [releases]: https://github.com/SirUli/homeassistant-magicmirror/releases
 [repository]: https://github.com/SirUli/homeassistant-magicmirror
 [semver]: http://semver.org/spec/v2.0.0.htm
+[forum]: https://community.home-assistant.io/

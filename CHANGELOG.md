@@ -8,6 +8,20 @@ and this project adheres to [Semantic Versioning][semantic-versioning].
 ## Unreleased
 
 No unreleased changes yet.
+
+## [v0.25.2] (2023-10-07)
+
+Prior versions are still crashing due to unknown reasons, this is the attempt to fix that.
+
+### Changed
+- Removed initial cloning of repo, will be performed on "rebuild" in Homeassistant then
+
+## [v0.25.1] (2023-10-06)
+
+### Changed
+- Removed unsafe-perm from most places
+
+
 ## [v0.25.0] (2021-11-01)
 
 ### Changed

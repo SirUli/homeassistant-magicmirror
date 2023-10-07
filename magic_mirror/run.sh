@@ -35,7 +35,8 @@ if [ ! -d "$MIRROR_APP_PATH" ]; then
     echo "[ERROR] Magic Mirror not found!!"
     mkdir -p "$MIRROR_APP_PATH"
     cd "$MIRROR_APP_PATH"
-    git clone --depth 1 -b master https://github.com/MichMich/MagicMirror.git . 
+    git clone --depth 1 -b master https://github.com/MichMich/MagicMirror.git .
+    npm install
 else
     echo "[INFO] Magic Mirror already installed"
 fi
@@ -106,7 +107,7 @@ fi
 if [ "$NPMINSTALL" == "true" ];
 then
     echo "[INFO] Running NPM Install"
-    if npm install --unsafe-perm --silent; then 
+    if npm install --silent; then 
         echo "[INFO] Dependencies installation Done!"
     else
         echo "[ERROR] Unable to install dependencies!"
@@ -123,7 +124,7 @@ while read name git cmd; do
         cd $MIRROR_APP_PATH/modules
         git clone --depth 1 $git
         cd $name/
-        npm install --unsafe-perm --silent
+        npm install --silent
         
         if [ "$cmd" == "" ]; then
             echo "[INFO] No Command to run"
