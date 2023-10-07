@@ -23,11 +23,12 @@ RUN apk add --no-cache \
   unzip \
     && npm i npm@latest -g 
 
+# Copy root filesystem
+COPY rootfs /
+
 WORKDIR /opt/magic_mirror
 
 # Copy data
-COPY run.sh /
-COPY config.js /
 RUN chmod a+x /run.sh
 
 # Labels

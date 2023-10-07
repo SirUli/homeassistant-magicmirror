@@ -9,6 +9,11 @@ and this project adheres to [Semantic Versioning][semantic-versioning].
 
 No unreleased changes yet.
 
+## [v0.26.1] (2023-10-08)
+
+### Changed
+- Internal Restructuring to avoid many copies
+
 ## [v0.26.0] (2023-10-08)
 
 ### Changed
