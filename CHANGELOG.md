@@ -9,6 +9,11 @@ and this project adheres to [Semantic Versioning][semantic-versioning].
 
 No unreleased changes yet.
 
+## [v0.26.2] (2023-10-08)
+
+### Changed
+- Disable init
+
 ## [v0.26.1] (2023-10-08)
 
 ### Changed
