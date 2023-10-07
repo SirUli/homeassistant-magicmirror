@@ -14,7 +14,13 @@ ARG BUILD_REPOSITORY
 ARG BUILD_VERSION
 
 # Setup base
-RUN apk add --no-cache git nodejs nodejs npm curl wget unzip \
+RUN apk add --no-cache \
+  git \
+  nodejs \
+  npm \
+  curl \
+  wget \
+  unzip \
     && npm i npm@latest -g 
 
 WORKDIR /opt/magic_mirror
