@@ -9,6 +9,11 @@ and this project adheres to [Semantic Versioning][semantic-versioning].
 
 No unreleased changes yet.
 
+## [v0.25.4] (2023-10-08)
+
+### Changed
+- Explicitly disable apparmor
+
 ## [v0.25.3] (2023-10-07)
 
 Prior versions are still crashing due to unknown reasons, this is the attempt to fix that.

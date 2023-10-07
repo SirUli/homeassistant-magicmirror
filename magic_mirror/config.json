@@ -1,6 +1,6 @@
 {
   "name": "MagicMirror²",
-  "version": "0.25.3",
+  "version": "0.25.4",
   "slug": "magic_mirror",
   "description": "MagicMirror² is an open source modular smart mirror platform. This addon run the server in your home assistant environment.",
   "url": "https://github.com/SirUli/homeassistant-magicmirror",
@@ -8,6 +8,7 @@
   "startup": "application",
   "ingress": false,
   "boot": "auto",
+  "apparmor": "false",
   "panel_icon": "mdi:monitor-shimmer",
   "homeassistant_api": true,
   "ports": {
