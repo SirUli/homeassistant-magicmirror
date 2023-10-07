@@ -9,6 +9,11 @@ and this project adheres to [Semantic Versioning][semantic-versioning].
 
 No unreleased changes yet.
 
+## [v0.26.0] (2023-10-08)
+
+### Changed
+- Move to S6 Startup system
+
 ## [v0.25.4] (2023-10-08)
 
 ### Changed

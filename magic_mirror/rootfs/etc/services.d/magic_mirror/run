@@ -1,0 +1,6 @@
+#!/usr/bin/with-contenv bashio
+
+bashio::log.info "Starting Magic Mirror from S6"
+
+# Run your program
+exec /run.sh
