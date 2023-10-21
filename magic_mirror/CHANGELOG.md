@@ -9,6 +9,11 @@ and this project adheres to [Semantic Versioning][semantic-versioning].
 
 No unreleased changes yet.
 
+## [v1.0.0] (2023-10-21)
+
+### Changed
+- Moving into 1.0.0 as everything works as of today
+
 ## [v0.26.5] (2023-10-21)
 
 ### Changed

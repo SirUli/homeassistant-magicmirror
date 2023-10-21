@@ -111,18 +111,9 @@ panel_iframe:
     url: http://addres.to.your.Home Assistant:8181
 ```
 
-## Changelog & Releases
+## Changelog
 
-This repository keeps a [change log](CHANGELOG.md). The format of the log
-is based on [Keep a Changelog][keepchangelog].
-
-Releases are based on [Semantic Versioning][semver], and use the format
-of ``MAJOR.MINOR.PATCH``. In a nutshell, the version will be incremented
-based on the following:
-
-* ``MAJOR``: Incompatible or major changes.
-* ``MINOR``: Backwards-compatible new features and enhancements.
-* ``PATCH``: Backwards-compatible bugfixes and package updates.
+This repository keeps a [change log](CHANGELOG.md).
 
 ## Support
 
@@ -140,11 +131,9 @@ use the code or contribute to it.
 [commits-shield]: https://img.shields.io/github/commit-activity/y/SirUli/homeassistant-magicmirror.svg
 [commits]: https://github.com/SirUli/homeassistant-magicmirror/commits/master
 [issue]: https://github.com/SirUli/homeassistant-magicmirror/issues
-[keepchangelog]: http://keepachangelog.com/en/1.0.0/
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2023.svg
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-experimental-yellow.svg
 [releases-shield]: https://img.shields.io/github/release/SirUli/homeassistant-magicmirror.svg
 [releases]: https://github.com/SirUli/homeassistant-magicmirror/releases
 [repository]: https://github.com/SirUli/homeassistant-magicmirror
-[semver]: http://semver.org/spec/v2.0.0.htm
 [forum]: https://community.home-assistant.io/
