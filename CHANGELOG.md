@@ -9,6 +9,11 @@ and this project adheres to [Semantic Versioning][semantic-versioning].
 
 No unreleased changes yet.
 
+## [v0.26.3] (2023-10-21)
+
+### Changed
+- Fix run.sh for missing echo closure
+
 ## [v0.26.2] (2023-10-08)
 
 ### Changed

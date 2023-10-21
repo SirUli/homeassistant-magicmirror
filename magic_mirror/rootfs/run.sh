@@ -163,8 +163,8 @@ echo "[INFO] replace 64f57845 with the folder containing magic_mirror"
 echo ""
 echo "cd /usr/share/hassio/addons/git/64f57845/magic_mirror"
 echo "docker build --build-arg BUILD_FROM=\"homeassistant/amd64-base:latest\" -t local/magic-mirror-addon ."
-echo "mkdir /tmp/mm_data
-echo "docker run --rm -v /tmp/mm_data:/data -p 8181:8080 local/magic-mirror-addon
+echo "mkdir /tmp/mm_data"
+echo "docker run --rm -v /tmp/mm_data:/data -p 8181:8080 local/magic-mirror-addon"
 echo ""
 echo "--------------------------------------------------------------------------------"
 echo "[INFO] Start serveronly magic mirror process"
