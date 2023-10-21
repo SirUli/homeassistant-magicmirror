@@ -13,24 +13,6 @@ ARG BUILD_REF
 ARG BUILD_REPOSITORY
 ARG BUILD_VERSION
 
-# Setup base
-RUN apk add --no-cache \
-  git \
-  nodejs \
-  npm \
-  curl \
-  wget \
-  unzip \
-    && npm i npm@latest -g 
-
-# Copy root filesystem
-COPY rootfs /
-
-WORKDIR /opt/magic_mirror
-
-# Copy data
-RUN chmod a+x /run.sh
-
 # Labels
 LABEL \
     io.hass.name="${BUILD_NAME}" \
@@ -49,5 +31,20 @@ LABEL \
     org.opencontainers.image.revision=${BUILD_REF} \
     org.opencontainers.image.version=${BUILD_VERSION}
 
+# Setup base
+RUN apk add --no-cache \
+  git \
+  nodejs \
+  npm \
+  curl \
+  wget \
+  unzip \
+    && npm i npm@latest -g 
 
+# Copy root filesystem
+COPY rootfs /
 
+WORKDIR /opt/magic_mirror
+
+# Copy data
+RUN chmod a+x /run.sh /etc/services.d/magic_mirror/*
