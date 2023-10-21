@@ -31,12 +31,14 @@ echo " MM_CSS_PATH: $MM_CSS_PATH"
 echo "--------------------------------------------------------------------------------"
 
 # Check for install, if not found major issue. Try to clone again.
-if [ ! -d "$MIRROR_APP_PATH" ]; then
+if [ ! -f "${MIRROR_APP_PATH}/package.json" ]; then
     echo "[ERROR] Magic Mirror not found!!"
     mkdir -p "$MIRROR_APP_PATH"
     cd "$MIRROR_APP_PATH"
     git clone --depth 1 -b master https://github.com/MichMich/MagicMirror.git .
     npm install
+    # No further need for an update
+    GITUPDATE="false"
 else
     echo "[INFO] Magic Mirror already installed"
 fi

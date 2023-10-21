@@ -9,6 +9,11 @@ and this project adheres to [Semantic Versioning][semantic-versioning].
 
 No unreleased changes yet.
 
+## [v0.26.5] (2023-10-21)
+
+### Changed
+- Fix initial installation into container
+
 ## [v0.26.4] (2023-10-21)
 
 ### Changed
